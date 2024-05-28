@@ -1,0 +1,10 @@
+
+FROM adoptopenjdk/openjdk11:alpine-jre
+
+COPY target/target/api-agencia-0.0.1-SNAPSHOT.jar /app/target/api-agencia-0.0.1-SNAPSHOT.jar
+
+WORKDIR /app
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "tu-aplicacion.jar"]
